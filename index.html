@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Scratch и нейросети для детей — Eduson Academy</title>
+<meta name="description" content="Индивидуальное обучение детей Scratch и нейросетям: 48 уроков, 20 проектов, личный преподаватель.">
+<style>
+:root{--p:#4b3fe0;--pd:#2a2290;--y:#ffc928;--bg:#f3f1ff;--t:#16153a}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,Arial,sans-serif;color:var(--t);line-height:1.5}
+.w{max-width:1120px;margin:0 auto;padding:0 20px}
+section{padding:72px 0}h2{font-size:clamp(26px,4vw,40px);line-height:1.15;text-align:center;margin-bottom:40px}
+h2 em{font-style:normal;color:var(--p)}
+.btn{display:inline-block;background:var(--y);color:#1a1a1a;font-weight:700;padding:16px 28px;border-radius:14px;text-decoration:none;transition:.2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px #0003}
+.btn.b{background:var(--p);color:#fff}
+.hero{background:linear-gradient(135deg,var(--p),var(--pd));color:#fff;padding:0;overflow:hidden}
+.hero .w{display:grid;grid-template-columns:1.2fr 1fr;align-items:end;gap:20px;min-height:560px}
+.hero .l{padding:48px 0 64px;align-self:center}
+.logos{display:flex;gap:24px;align-items:center;margin-bottom:40px;font-weight:800;font-size:22px}
+.logos img{height:36px;background:#fff;border-radius:8px;padding:4px 8px}
+.hero h1{font-size:clamp(32px,5vw,56px);line-height:1.1}
+.hero h1 mark{background:var(--y);color:#1a1a1a;padding:0 12px;border-radius:10px;display:inline-block;transform:rotate(-2deg)}
+.hero p{margin:20px 0 30px;font-size:19px;opacity:.9}
+.hero img.boy{width:100%;max-width:480px;justify-self:center;display:block}
+.grid{display:grid;gap:20px}.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}
+.card{background:#fff;border-radius:22px;padding:28px;box-shadow:0 6px 24px #4b3fe014}
+.alt{background:var(--bg)}
+.num{font-size:42px;font-weight:800;color:var(--p)}
+.trust .card{text-align:center}
+.logos2{display:flex;gap:28px;justify-content:center;align-items:center;margin-top:30px;flex-wrap:wrap}
+.logos2 img{height:56px;width:auto;border-radius:12px}
+.tabs{display:flex;justify-content:center;gap:8px;margin-bottom:28px}
+.tabs button{border:0;padding:12px 28px;border-radius:99px;font-size:17px;font-weight:700;cursor:pointer;background:#fff;color:var(--p)}
+.tabs button.on{background:var(--p);color:#fff}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 20px}
+.chip{background:var(--p);color:#fff;padding:8px 16px;border-radius:99px;font-weight:600;font-size:15px}
+.steps{list-style:none;padding:0;counter-reset:s}
+.steps li{counter-increment:s;display:flex;gap:14px;margin:12px 0;align-items:flex-start}
+.steps li:before{content:counter(s);flex:none;width:32px;height:32px;border-radius:50%;background:var(--y);font-weight:800;display:grid;place-items:center}
+.cs{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
+.cs img{width:100%;border-radius:18px}
+.ic{font-size:34px;margin-bottom:8px}
+.cta{background:linear-gradient(135deg,var(--p),var(--pd));color:#fff;border-radius:28px;padding:56px 28px;text-align:center}
+.cta h2{color:#fff;margin-bottom:24px}
+.price{position:relative}.price.pop{border:3px solid var(--p)}
+.tag{position:absolute;top:-14px;left:24px;background:var(--y);font-weight:700;padding:4px 14px;border-radius:99px;font-size:14px}
+.old{text-decoration:line-through;opacity:.5}.new{font-size:38px;font-weight:800}
+.off{display:inline-block;background:#e8fff0;color:#0a8a3a;font-weight:700;padding:3px 10px;border-radius:8px;font-size:14px}
+.price ul{padding-left:20px;margin:16px 0}.price li{margin:6px 0}
+.bonus{background:#e8fff0;border-radius:14px;padding:12px 16px;margin:12px 0;font-size:15px}
+.gift{background:var(--bg);border-radius:14px;padding:14px 16px;margin:12px 0;font-size:15px}
+footer{background:#12112e;color:#bbb;padding:48px 0 24px;font-size:14px}
+footer .cols{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-bottom:28px}
+footer b{color:#fff;display:block;margin-bottom:8px}footer a{color:#bbb;text-decoration:none;display:block;margin:4px 0}
+@media(max-width:800px){.hero .w,.cs,.g3,.g2,footer .cols{grid-template-columns:1fr}.hero img.boy{max-width:300px}section{padding:48px 0}}
+.pane{display:none}.pane.on{display:block}
+</style></head><body>
+
+<header class="hero"><div class="w">
+ <div class="l">
+  <div class="logos"><span>Eduson Academy</span><img src="img/i2.png" alt="Просвещение"></div>
+  <h1>Сегодня начинается будущее вашего ребёнка в сфере <mark>программирования</mark></h1>
+  <p>Индивидуальные онлайн-занятия по Scratch и нейросетям с личным преподавателем. Помогаем получить ИТ-профессию ещё в школе.</p>
+  <a class="btn" href="#tariffs">Записаться</a>
+ </div>
+ <img class="boy" src="img/i0.png" alt="Ребёнок с ноутбуком">
+</div></header>
+
+<section class="alt trust"><div class="w">
+ <h2>Eduson — это про <em>доверие</em></h2>
+ <div class="grid g3">
+  <div class="card"><div class="num">750 000</div>студентов проходят обучение на 2026 год</div>
+  <div class="card"><div class="num">№1</div>в дополнительном образовании по версии Smart Ranking</div>
+  <div class="card"><div class="num">12 лет</div>обучаем детей, студентов, сотрудников топовых компаний</div>
+ </div>
+ <div class="grid g2" style="margin-top:20px">
+  <div class="card">Проект группы компаний «Просвещение»<br><small>Вносим вклад в научно-техническое развитие страны</small></div>
+  <div class="card">Работаем по образовательной лицензии<br><small>Качество программ подтверждено Рособрнадзором</small></div>
+ </div>
+ <div class="logos2"><img src="img/i2.png" alt=""><img src="img/i4.png" alt="МГУ"><img src="img/i6.png" alt="VK"><img src="img/i7.png" alt="Яндекс"><img src="img/i8.png" alt="Сбер"></div>
+ <p style="text-align:center;margin-top:16px;opacity:.7">Наши курсы разработаны экспертами топовых IT-компаний и ВУЗов</p>
+</div></section>
+
+<section><div class="w">
+ <h2>Как проходит <em>обучение?</em></h2>
+ <div class="cs">
+  <div class="card"><ol class="steps">
+   <li>Занятия 1 раз в неделю онлайн, только с преподавателем</li>
+   <li>Все задания в формате IT-стажировки</li>
+   <li>Геймификация учебного процесса</li>
+   <li>Итог — портфолио разработчика и интерес к учёбе</li></ol></div>
+  <img src="img/i10.png" alt="Пример проекта: игра на Scratch">
+ </div>
+</div></section>
+
+<section class="alt"><div class="w">
+ <div class="tabs"><button class="on" data-t="s">Scratch</button><button data-t="n">Нейросети</button></div>
+ <div class="card">
+  <div class="pane on" id="s"><h2 style="text-align:left;margin-bottom:0">Scratch</h2>
+   <div class="chips"><span class="chip">13 проектов</span><span class="chip">40 уроков с преподавателем</span><span class="chip">10 месяцев</span></div>
+   <p>Ребёнок в формате стажировки:</p>
+   <ol class="steps"><li>Изучит основы компьютерной грамотности и научится работать с координатами</li>
+   <li>Примерит на себя профессию разработчика и научится работать с графикой и звуковыми эффектами</li>
+   <li>Создаст с нуля первые IT-проекты — 2D-игры</li>
+   <li>Освоит базовые навыки программирования</li></ol></div>
+  <div class="pane" id="n"><h2 style="text-align:left;margin-bottom:0">Нейросети</h2>
+   <div class="chips"><span class="chip">48 уроков</span><span class="chip">20 проектов</span><span class="chip">12 месяцев</span></div>
+   <p>Знакомство с нейросетями, создание презентаций и документов, цифровая грамотность. В бонус — 40 часов: Microsoft Office, Google Workspace, Figma.</p></div>
+ </div>
+</div></section>
+
+<section><div class="w">
+ <h2>С нуля до уровня <em>профессионалов</em></h2>
+ <p style="text-align:center;margin:-20px 0 30px">Мы помогаем ученикам пройти путь от первых шагов в программировании до серьёзной практики разработки. По итогам обучения ваш ребёнок:</p>
+ <div class="grid g3">
+  <div class="card"><div class="ic">📁</div>Соберёт портфолио собственных IT-проектов</div>
+  <div class="card"><div class="ic">💻</div>Освоит цифровую грамотность и базовые навыки программирования</div>
+  <div class="card"><div class="ic">🧑‍💻</div>Попробует себя в роли IT-специалиста</div>
+  <div class="card"><div class="ic">🧠</div>Научится мыслить логически и решать творческие задачи</div>
+  <div class="card"><div class="ic">📈</div>Улучшит школьные оценки и уровень английского</div>
+  <div class="card"><div class="ic">⏳</div>Будет с пользой проводить время за гаджетами</div>
+ </div>
+</div></section>
+
+<section class="alt"><div class="w">
+ <h2>Формат <em>обучения</em></h2>
+ <div class="grid g2">
+  <div class="card"><h3>Индивидуальные занятия</h3><ul style="padding-left:20px;margin-top:10px"><li>Только с преподавателем</li><li>1 раз в неделю онлайн</li><li>60 минут занятие</li></ul></div>
+  <div class="card"><h3>Записи уроков</h3><p style="margin-top:10px">Записи доступны в любое время, есть индивидуальный чат с преподавателем и персональная домашняя работа.</p></div>
+ </div>
+</div></section>
+
+<section><div class="w">
+ <h2>Создаём комфортную <em>среду для обучения</em></h2>
+ <div class="grid g3">
+  <div class="card"><div class="ic">🎓</div><b>Поддержка личного преподавателя</b><p>Ответит на любые вопросы, проверит домашнее задание, поддержит эмоционально.</p></div>
+  <div class="card"><div class="ic">🎮</div><b>Геймификация</b><p>Учёба в формате игры и IT-стажировки.</p></div>
+  <div class="card"><div class="ic">💬</div><b>Обратная связь для родителей</b><p>Держим вас в курсе всех событий образовательного процесса.</p></div>
+ </div>
+</div></section>
+
+<section class="alt" id="tariffs"><div class="w">
+ <div class="cta" style="margin-bottom:56px"><h2>Запишитесь сейчас и начните обучение в любое удобное время</h2><a class="btn" href="#tariffs">Записаться</a></div>
+ <h2>Тарифы</h2>
+ <div class="grid g2">
+  <div class="card price"><h3>Индивидуальный</h3>
+   <ul><li>48 уроков</li><li>20 проектов</li><li>12 месяцев</li><li>60 минут занятие</li><li>Записи уроков доступны в любое время</li><li>Индивидуальный чат с преподавателем</li><li>Персональная домашняя работа</li></ul>
+   <div class="bonus"><b>Бонус: 40 часов</b><br>Цифровая грамотность, презентации и документы, нейросети, Microsoft Office, Google Workspace, Figma</div>
+   <div class="old">94 992 ₽</div><div class="new">71 244 ₽</div><span class="off">СКИДКА 25%</span>
+   <p style="margin:10px 0 18px"><b>5 937 ₽/мес</b> в рассрочку 0% на 12 месяцев · первый платёж через 30 дней</p>
+   <a class="btn b" href="#">Оплатить со скидкой 25% →</a></div>
+  <div class="card price pop"><span class="tag">Самый популярный</span><h3>Индивидуальный PRO</h3>
+   <ul><li>Всё из тарифа «Индивидуальный»</li><li>2 года обучения</li><li>+ 1 год обучения, + 250 часов занятий</li><li>+ 10 профессиональных проектов, + 196 практических заданий</li><li>Диплом о профессиональной переподготовке*</li><li>338 часов</li></ul>
+   <div class="gift"><b>Курс-профессия на выбор в подарок:</b><br>Фронтенд-разработчик · Веб-дизайнер · Аналитик данных · Python-разработчик · Инженер по тестированию · Data Scientist · Project Manager в ИТ<br><small>Поможем выбрать свою ИТ-профессию</small></div>
+   <div class="old">238 000 ₽</div><div class="new">124 500 ₽</div><span class="off">СКИДКА 48%</span>
+   <p style="margin:10px 0 18px"><b>5 188 ₽/мес</b> в рассрочку 0% на 24 месяца · первый платёж через 30 дней</p>
+   <a class="btn" href="#">Оплатить со скидкой 48% →</a>
+   <p style="font-size:12px;opacity:.6;margin-top:12px">* при наличии или получении СПО/высшего образования</p></div>
+ </div>
+ <div class="logos2"><img src="img/i12.png" alt="Награда" style="height:90px"></div>
+</div></section>
+
+<footer><div class="w">
+ <div class="cols">
+  <div><b>Направления обучения</b><a>Управление и бизнес</a><a>Аналитика и финансы</a><a>Маркетинг</a><a>ИТ</a><a>Дизайн</a></div>
+  <div><b>Академия</b><a>Отзывы</a><a>Блог</a><a>Вакансии</a><a>Контакты</a></div>
+  <div><b>Программы</b><a>Популярные курсы</a><a>Профессии на удалёнке</a><a>Подарочные сертификаты</a></div>
+  <div><b>Документы</b><a>Публичная оферта</a><a>Политика персональных данных</a><a>Политика возвратов</a><a>Государственная лицензия</a></div>
+ </div>
+ <p>+7 (800) 101-14-04 · academy@eduson.tv</p>
+ <p>115280, г. Москва, ул. Ленинская слобода, д. 19</p>
+ <p style="margin-top:12px">© 2020–2026 ООО «ЭДЮСОН»</p>
+</div></footer>
+<script>document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tabs button,.pane').forEach(e=>e.classList.remove('on'));b.classList.add('on');document.getElementById(b.dataset.t).classList.add('on')})</script>
+</body></html>
