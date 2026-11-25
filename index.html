@@ -53,6 +53,16 @@ footer .cols{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-bo
 footer b{color:#fff;display:block;margin-bottom:8px}footer a{color:#bbb;text-decoration:none;display:block;margin:4px 0}
 @media(max-width:800px){.hero .w,.cs,.g3,.g2,footer .cols{grid-template-columns:1fr}.hero img.boy{max-width:300px}section{padding:48px 0}}
 .pane{display:none}.pane.on{display:block}
+.how{background:#ecefff}
+.howbox{background:#fff;border-radius:30px;padding:40px 48px 52px}
+.howbox h2{margin-bottom:36px;color:#111}
+.howgrid{display:grid;grid-template-columns:1.35fr 1fr;gap:40px;align-items:center}
+.hs{display:flex;flex-direction:column;gap:14px}
+.st{background:#f5f5f5;border-radius:16px;padding:16px 20px}
+.st b{display:block;font-size:17px;color:#111;line-height:1.3}
+.st p{margin-top:6px;font-size:14px;color:#555;line-height:1.35}
+.collage{width:100%;display:block}
+@media(max-width:800px){.howbox{padding:28px 18px}.howgrid{grid-template-columns:1fr}}
 </style></head><body>
 
 <header class="hero"><div class="w">
@@ -80,15 +90,18 @@ footer b{color:#fff;display:block;margin-bottom:8px}footer a{color:#bbb;text-dec
  <p style="text-align:center;margin-top:16px;opacity:.7">Наши курсы разработаны экспертами топовых IT-компаний и ВУЗов</p>
 </div></section>
 
-<section><div class="w">
- <h2>Как проходит <em>обучение?</em></h2>
- <div class="cs">
-  <div class="card"><ol class="steps">
-   <li>Занятия 1 раз в неделю онлайн, только с преподавателем</li>
-   <li>Все задания в формате IT-стажировки</li>
-   <li>Геймификация учебного процесса</li>
-   <li>Итог — портфолио разработчика и интерес к учёбе</li></ol></div>
-  <img src="img/i10.png" alt="Пример проекта: игра на Scratch">
+<section class="how"><div class="w">
+ <div class="howbox">
+  <h2>Как проходит <em>обучение?</em></h2>
+  <div class="howgrid">
+   <div class="hs">
+    <div class="st"><b>1. Занятия проходят на нашей платформе</b><p>где ученики проходят интерактивные уроки с преподавателем</p></div>
+    <div class="st"><b>2. Студенты выполняют интересные и эффективные задания</b><p>под руководством опытного эксперта</p></div>
+    <div class="st"><b>3. Программа составлена так, чтобы ребятам не было слишком сложно или легко</b><p>Вместо постоянной теории — практические уроки, а вместо контрольных — создание реальных IT-проектов</p></div>
+    <div class="st"><b>4. По окончании курса</b><p>мы презентуем наши проекты и вручаем именные сертификаты Eduson</p></div>
+   </div>
+   <img class="collage" src="img/collage.png" alt="Код, ученик и проект на Scratch">
+  </div>
  </div>
 </div></section>
 
